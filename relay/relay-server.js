@@ -1,0 +1,1 @@
+const express=require('express'); const Gun=require('gun'); const app=express(); app.use(Gun.serve); const server=app.listen(process.env.PORT||8765, ()=>console.log('relay running')); Gun({ web: server });

@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: mlm
+      POSTGRES_USER: mlm_admin
+      POSTGRES_PASSWORD: mlm_pass
+    ports:
+      - "5432:5432"
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_URL: postgres://mlm_admin:mlm_pass@postgres:5432/mlm
+    ports:
+      - "4000:4000"
