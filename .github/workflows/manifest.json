@@ -1,0 +1,24 @@
+{
+  "main_company": {
+    "id": "GAPARK",
+    "name": "GAPARK"
+  },
+  "sub_companies": [
+    {
+      "id": "CENTIMO",
+      "name": "CENTIMO"
+    },
+    {
+      "id": "ARK",
+      "name": "ARK"
+    },
+    {
+      "id": "HULAMCO",
+      "name": "HULAMCO"
+    }
+  ],
+  "members_sample": [
+    "GAPARK-0001_Maria_Cruz",
+    "GAPARK-0002_Jose_Ramirez"
+  ]
+}
